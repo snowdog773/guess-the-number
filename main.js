@@ -192,7 +192,7 @@ console.log(`Welcome to GUESS THE NUMBER. Try to guess the number between ${lowe
 			// 5.c Push `number` into **`this`** object's `attempts` array.
 			
             guess(number = 0) {
-                game.attempts.push(number);
+                this.attempts.push(number);
             // } 
 			// 5.d Does the `number` passed match *`this`* object's `target`? **IF SO**,
 			// we should tell the user they won and how many tries it took. Then,
@@ -268,7 +268,7 @@ console.log(`Welcome to GUESS THE NUMBER. Try to guess the number between ${lowe
 			// 6.a Store the most recent attempt into a constant/variable
 			//     named `lastGuess`.
 			
-            let lastGuess = this.attempts[this.attempts.length - 1];
+            let lastGuess = this.attempts[this.attempts.length - 1];       	
 			// 6.b Is our `lastGuess` even a number? If it's NOT, then we
 			// should tell the user they need to guess a number first and
 			// then return as we're done here.
